@@ -1,9 +1,9 @@
 ## CTF中的web总结
 ### 基础知识
-Mysql,Oracle,Mssql,Access等SQL语法的细微区别
-熟悉和掌握手工sql注入所使用的语句
-学会PHP,Java,JavaScript,Python,Python,Lua等编程中的一种或多种
-学会配置Tomcat,IIS,Apache,Nginx等web服务器，了解配置信息及一些漏洞。
+Mysql,Oracle,Mssql,Access等SQL语法的细微区别  
+熟悉和掌握手工sql注入所使用的语句  
+学会PHP,Java,JavaScript,Python,Python,Lua等编程中的一种或多种  
+学会配置Tomcat,IIS,Apache,Nginx等web服务器，了解配置信息及一些漏洞。  
 
 ### web基础简介
 一、爆破，包括md5、爆破随机数、验证码识别等  
