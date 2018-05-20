@@ -10,7 +10,7 @@ Mysql,Oracle,Mssql,Access等SQL语法的细微区别
 二、绕WAF，包括花式绕Mysql、绕文件读取关键词检测之类拦截等
 三、花式玩弄几个PHP特性，包括弱类型，strpos和===，反序列化+destruct、\0截断、iconv截断等
 四、密码题，包括hash长度扩展、异或、移位加密各种变形、32位随机数过小、CBC翻转攻击等
-五、各种找源码技巧，包括git、svn、xxx.php.swp、www\.(zip|tar.gz|rar|7z)、xxx.php.bak、.git、\.DS_Store
+五、各种找源码技巧，包括git、svn、xxx.php.swp、ww w.(zip|tar.gz|rar|7z)、xxx.php.bak、.git、.DS_Store
 六、文件上传，包括花式文件后缀 .php345 .inc .phtml .phpt .phps、各种文件内容检测<?php <? <% <\script language=php>、花式解析漏洞
 七、Mysql类型差异，包括和PHP弱类型类似的特性,0x、0b、0e之类，varchar和integer相互转换,非strict模式截断等
 八、open_basedir、disable_functions花式绕过技巧，包括dl、mail、imagick、bash漏洞、DirectoryIterator及各种二进制选手插足的方法
