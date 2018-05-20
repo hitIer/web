@@ -6,8 +6,8 @@ Mysql,Oracle,Mssql,Access等SQL语法的细微区别
 学会配置Tomcat,IIS,Apache,Nginx等web服务器，了解配置信息及一些漏洞。
 
 ### web基础简介
-一、爆破，包括md5、爆破随机数、验证码识别等
-二、绕WAF，包括花式绕Mysql、绕文件读取关键词检测之类拦截等
+一、爆破，包括md5、爆破随机数、验证码识别等  
+二、绕WAF，包括花式绕Mysql、绕文件读取关键词检测之类拦截等  
 三、花式玩弄几个PHP特性，包括弱类型，strpos和===，反序列化+destruct、\0截断、iconv截断等
 四、密码题，包括hash长度扩展、异或、移位加密各种变形、32位随机数过小、CBC翻转攻击等
 五、各种找源码技巧，包括git、svn、xxx.php.swp、ww w.(zip|tar.gz|rar|7z)、xxx.php.bak、.git、.DS_Store
