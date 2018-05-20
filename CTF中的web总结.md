@@ -51,19 +51,19 @@ https://github.com/Bypass007/vuln/blob/master/OpenResty/OpenResty%20uri%E5%8F%82
 绕过：&&、Mysql注释符:/**/,/\*!条件注释*,--,;%00
 
 #### CTF Trick
-PHP弱类型
-序列化/反序列化
-XSS+CSRF+SSRF+RCE+Upload
-源码审计
+PHP弱类型  
+序列化/反序列化  
+XSS+CSRF+SSRF+RCE+Upload  
+源码审计  
 ##### PHP弱类型
-第一层
-var_dump("0e321" == "00e123");//bool(true)
-只要md5是0e开头。后面纯数字的情况才会把字符串转成科学计数法，0的N次方=0
-md5('240610708') //0e462097431906509019562988736854
-md5('QNKCDZO') //0e830400451993494058024219903391
-第二层
-s1[]=1&s2[]=2
-第三层
+第一层  
+var_dump("0e321" == "00e123");//bool(true)  
+只要md5是0e开头。后面纯数字的情况才会把字符串转成科学计数法，0的N次方=0  
+md5('240610708') //0e462097431906509019562988736854  
+md5('QNKCDZO') //0e830400451993494058024219903391  
+第二层  
+s1[]=1&s2[]=2  
+第三层  
 ```
 <!--
 	if((string)$_POST['param1']!==(string)$_POST['param2'] && md5($_POST['param1'])===md5($_POST['param2'])){
@@ -71,14 +71,14 @@ s1[]=1&s2[]=2
 		}
 -->
 ```
-使用强字符串转换，听说是去年的BKPCTF改的一题（没做过）
-传URLencode后的二进制,payload:
+使用强字符串转换，听说是去年的BKPCTF改的一题（没做过）  
+传URLencode后的二进制,payload:  
 ```
 Param1=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%00%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%55%5d%83%60%fb%5f%07%fe%a2
 Param2=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%02%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%d5%5d%83%60%fb%5f%07%fe%a2
 ```
 ##### 序列化/反序列化
-serialize($data)/unserialize($data)
+serialize($data)/unserialize($data)  
 preg_match( "/^{$token}:[0-9]+:/s", $data );正则绕过+8=8
 ##### XSS
 1. 反射型XSS
@@ -100,12 +100,12 @@ html css flash
 * ftp://
 * data:image/png;base64,PD9waH==
 
-花式文件后缀
-.php345 .inc .phtml .phpt .phps
-各种文件内容检测<?php <? <% <\script language=php> <?=
-花式解析漏洞.php.jpg
-各种校验
-.htaccess文件
+花式文件后缀  
+.php345 .inc .phtml .phpt .phps  
+各种文件内容检测<?php <? <% <\script language=php> <?=  
+花式解析漏洞.php.jpg  
+各种校验  
+.htaccess文件  
 #### 危险函数
 ##### PHP代码执行相关函数
 eval & assert & preg_replace & call_user_func & create_function & array_map
